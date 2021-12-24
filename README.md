@@ -1,5 +1,5 @@
-# Website
-My personal website [patbird.me](https://patbird.me) powered by [Vue](https://vuejs.org/), [Vite](https://vitejs.dev/) and [Windi CSS](https://windicss.org/)
+# Meejisu
+Meejisu's website [meejisu.life](https://meejisu.life)
 
 <br>
 
