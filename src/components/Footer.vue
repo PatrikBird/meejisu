@@ -7,7 +7,7 @@
         style="color: inherit"
         >CC BY-NC-SA 4.0</a
       >
-      2021 © Meejisu</span
+      2021 © Patrik Bird</span
     >
     <div class="flex-auto" />
   </div>
