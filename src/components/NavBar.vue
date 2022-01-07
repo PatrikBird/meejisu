@@ -31,6 +31,10 @@ import { isDark } from '/~/logics'
         <router-link to="/notes" title="Notes">
           <ri-sticky-note-line />
         </router-link> -->
+        <a href="https://google.com" target="_blank" title="Brunch">
+          <brunch-logo v-show="!isDark" />
+          <brunch-logo-white v-show="isDark" />
+        </a>
         <a href="https://twitter.com/veganmeejisu" target="_blank" title="Twitter">
           <feather-twitter />
         </a>

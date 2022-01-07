@@ -5,6 +5,8 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'AntDesign:carryOutTwotone': typeof import('~icons/ant-design/carry-out-twotone')['default']
+    BrunchLogo: typeof import('./src/components/icons/BrunchLogo.vue')['default']
+    BrunchLogoWhite: typeof import('./src/components/icons/BrunchLogoWhite.vue')['default']
     'Bx:bxPlanet': typeof import('~icons/bx/bx-planet')['default']
     'Carbon:arrowUp': typeof import('~icons/carbon/arrow-up')['default']
     'Carbon:carbon': typeof import('~icons/carbon/carbon')['default']
