@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { isDark } from '/~/logics'
+import BrunchLogo from './icons/BrunchLogo.vue'
 </script>
 
 <template>
@@ -17,10 +18,6 @@ import { isDark } from '/~/logics'
         <!-- <router-link to="/">
           <span class="<md:hidden">Home</span>
         </router-link>
-        <router-link to="/posts">
-          <span class="<md:hidden">Blog</span>
-          <iconoir-page class="md:hidden" />
-        </router-link>
         <router-link to="/projects">
           <span class="<md:hidden">Projects</span>
           <ion-construct-outline class="md:hidden" />
@@ -34,6 +31,13 @@ import { isDark } from '/~/logics'
         <a href="https://google.com" target="_blank" title="Brunch">
           <brunch-logo v-show="!isDark" />
           <brunch-logo-white v-show="isDark" />
+        </a>
+        <router-link to="/posts">
+          <span class="<md:hidden">Blog</span>
+          <iconoir-page class="md:hidden" />
+        </router-link>
+        <a href="https://youtube.com" target="_blank" title="YouTube">
+          <simple-line-icons:social-youtube />
         </a>
         <a href="https://twitter.com/veganmeejisu" target="_blank" title="Twitter">
           <feather-twitter />

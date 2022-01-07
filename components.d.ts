@@ -55,6 +55,7 @@ declare module 'vue' {
     RiMoonLine: typeof import('~icons/ri/moon-line')['default']
     RiStickyNoteLine: typeof import('~icons/ri/sticky-note-line')['default']
     RiSunLine: typeof import('~icons/ri/sun-line')['default']
+    'SimpleLineIcons:socialYoutube': typeof import('~icons/simple-line-icons/social-youtube')['default']
     Slidev: typeof import('./src/components/icons/Slidev.vue')['default']
     SolidLogo: typeof import('./src/components/icons/SolidLogo.vue')['default']
     StarsRanking: typeof import('./src/components/StarsRanking.vue')['default']
