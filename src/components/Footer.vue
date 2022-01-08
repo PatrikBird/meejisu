@@ -1,14 +1,27 @@
+<script setup lang="ts">
+import { isDark } from '/~/logics'
+import BrunchLogo from './icons/BrunchLogo.vue'
+</script>
+
 <template>
-  <div class="mt-10 mb-6 prose m-auto opacity-50 flex">
-    <span class="text-sm"
-      ><a
-        target="_blank"
-        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-        style="color: inherit"
-        >CC BY-NC-SA 4.0</a
-      >
-      {{ new Date().getFullYear() }} © Meejisu</span
-    >
-    <div class="flex-auto" />
-  </div>
+  <nav class="text-xl text-center mt-4">
+    <a class="icon-btn mx-2" href="https://google.com" target="_blank" title="Brunch">
+      <brunch-logo v-show="!isDark" />
+      <brunch-logo-white v-show="isDark" />
+    </a>
+
+    <a class="icon-btn mx-2" href="https://youtube.com" target="_blank" title="YouTube">
+      <simple-line-icons:social-youtube />
+    </a>
+
+    <a
+      class="icon-btn mx-2"
+      href="https://twitter.com/veganmeejisu"
+      target="_blank"
+      title="Twitter">
+      <feather-twitter />
+    </a>
+
+    <toggle-theme />
+  </nav>
 </template>
