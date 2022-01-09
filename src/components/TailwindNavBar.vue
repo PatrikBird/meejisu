@@ -90,7 +90,6 @@
 </template>
 
 <script setup lang="ts">
-import ToggleTheme1 from './ToggleTheme.vue';
 const openMenu = ref(false)
 function toggleMenu() {
   openMenu.value = !openMenu.value
