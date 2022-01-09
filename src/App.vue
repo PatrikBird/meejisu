@@ -1,5 +1,5 @@
 <template>
-  <NavBar />
+  <TailwindNavBar />
   <main class="px-7 py-10">
     <router-view />
     <Footer />
