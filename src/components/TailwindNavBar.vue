@@ -21,11 +21,11 @@
           <div class="flex-shrink-0 flex items-center">
             <img
               class="block lg:hidden h-8 w-auto"
-              src="../../cropped-300-logo.webp"
+              src="../../public/cropped-300-logo.webp"
               alt="Logo" />
             <img
               class="hidden lg:block h-8 w-auto"
-              src="../../cropped-300-logo.webp"
+              src="../../public/cropped-300-logo.webp"
               alt="Logo" />
           </div>
           <div class="hidden sm:block sm:ml-6">
