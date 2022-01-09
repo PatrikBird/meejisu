@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-          <ToggleTheme />
+        <ToggleTheme />
       </div>
     </div>
 
