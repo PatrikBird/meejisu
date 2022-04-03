@@ -13,7 +13,7 @@ function toggleMenu() {
           <!-- Mobile menu button-->
           <button
             type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-black dark:text-white hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue"
+            class="inline-flex items-center justify-center p-2 rounded-md text-black dark:text-white hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue"
             aria-controls="mobile-menu"
             aria-expanded="false"
             @click="toggleMenu"
@@ -32,10 +32,10 @@ function toggleMenu() {
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <!-- desktop menu items -->
               <router-link
                 to="/projects"
-                class="text-black dark:text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="text-black dark:text-white hover:text-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 aria-current="page"
               >Projects</router-link>
             </div>
@@ -45,13 +45,12 @@ function toggleMenu() {
       </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state. -->
+    <!-- mobile menu -->
     <div v-if="openMenu" id="mobile-menu" class="sm:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <router-link
           to="/projects"
-          class="bg-gray-600 text-white block px-3 py-2 rounded-md text-base font-medium"
+          class="hover:text-teal-600 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
         >Projects</router-link>
       </div>
     </div>
