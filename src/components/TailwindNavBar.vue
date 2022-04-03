@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const openMenu = ref(false)
+function toggleMenu() {
+  openMenu.value = !openMenu.value
+}
+</script>
+
 <template>
   <nav class="bg-white dark:bg-black">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -9,48 +16,28 @@
             class="inline-flex items-center justify-center p-2 rounded-md text-black dark:text-white hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue"
             aria-controls="mobile-menu"
             aria-expanded="false"
-            @click="toggleMenu">
+            @click="toggleMenu"
+          >
             <span class="sr-only">Open main menu</span>
             <carbon:menu v-if="!openMenu"></carbon:menu>
             <carbon:close v-if="openMenu"></carbon:close>
           </button>
         </div>
-        <div
-          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center">
-            <img
-              class="block lg:hidden h-8 w-auto"
-              src="../../public/cropped-300-logo.webp"
-              alt="Logo" />
-            <img
-              class="hidden lg:block h-8 w-auto"
-              src="../../public/cropped-300-logo.webp"
-              alt="Logo" />
+            <router-link to="/" class="font-medium text-gray-900 dark:text-white">
+              <img class="block lg:hidden h-8 w-auto" src="/cropped-300-logo.webp" alt="Logo" />
+              <img class="hidden lg:block h-8 w-auto" src="/cropped-300-logo.webp" alt="Logo" />
+            </router-link>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a
-                href="#"
+              <router-link
+                to="/projects"
                 class="text-black dark:text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 aria-current="page"
-                >Dashboard</a
-              >
-              <a
-                href="#"
-                class="text-black dark:text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >Team</a
-              >
-              <a
-                href="#"
-                class="text-black dark:text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >Projects</a
-              >
-              <a
-                href="#"
-                class="text-black dark:text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >Calendar</a
-              >
+              >Projects</router-link>
             </div>
           </div>
         </div>
@@ -62,35 +49,11 @@
     <div v-if="openMenu" id="mobile-menu" class="sm:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a
-          href="#"
+        <router-link
+          to="/projects"
           class="bg-gray-600 text-white block px-3 py-2 rounded-md text-base font-medium"
-          aria-current="page"
-          >Dashboard</a
-        >
-        <a
-          href="#"
-          class="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >Team</a
-        >
-        <a
-          href="#"
-          class="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >Projects</a
-        >
-        <a
-          href="#"
-          class="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >Calendar</a
-        >
+        >Projects</router-link>
       </div>
     </div>
   </nav>
 </template>
-
-<script setup lang="ts">
-const openMenu = ref(false)
-function toggleMenu() {
-  openMenu.value = !openMenu.value
-}
-</script>
