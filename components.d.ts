@@ -8,7 +8,6 @@ declare module 'vue' {
     BrunchLogoWhite: typeof import('./src/components/icons/BrunchLogoWhite.vue')['default']
     'Carbon:arrowUp': typeof import('~icons/carbon/arrow-up')['default']
     'Carbon:close': typeof import('~icons/carbon/close')['default']
-    'Carbon:logo': typeof import('~icons/carbon/logo')['default']
     'Carbon:menu': typeof import('~icons/carbon/menu')['default']
     DarkToggleButton: typeof import('./src/components/slides/DarkToggleButton.vue')['default']
     FeatherTwitter: typeof import('~icons/feather/twitter')['default']
