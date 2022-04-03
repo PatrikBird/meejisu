@@ -35,7 +35,7 @@ function toggleMenu() {
               <!-- desktop menu items -->
               <router-link
                 to="/projects"
-                class="text-black dark:text-white hover:text-teal-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="text-black dark:text-white hover:text-teal-600 px-3 py-2 rounded-md text-sm font-medium"
                 aria-current="page"
               >Projects</router-link>
             </div>
