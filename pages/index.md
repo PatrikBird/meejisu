@@ -9,7 +9,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Dictum sit amet justo donec enim diam vulputate ut. Morbi enim nunc faucibus a pellentesque sit amet. Sollicitudin ac orci phasellus egestas tellus rutrum. Amet est placerat in egestas erat imperdiet sed euismod. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Orci nulla pellentesque dignissim enim. Ultrices sagittis orci a scelerisque purus semper eget. Est ante in nibh mauris cursus mattis molestie. Mattis rhoncus urna neque viverra justo nec.
 
 <section class="container mx-auto max-w-xs">
-    <img class="mx-auto" src="../public/meejisu-250.webp" alt="portrait" >
+    <img width=100 height=120 class="mx-auto" src="../public/meejisu-250.webp" alt="portrait">
 </section>
 ---
 
