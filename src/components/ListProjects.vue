@@ -35,7 +35,7 @@ const { projects } = defineProps<{ projects: Record<string, any[]> }>()
   </template>
   <div class="markdown mt-10">
     <p class="opacity-75">
-      <!-- <em>Thanks for getting intersted in my works! If like them or find them useful, consider<a href="https://github.com/sponsors/antfu" target="_blank" rel="nofollow noopener noreferrer">&nbsp;sponsoring me&nbsp;</a>to support me keeping them sustainable. Cheers! :)</em> -->
+      <em>Thanks for getting intersted in my work!</em>
     </p>
   </div>
 </template>
@@ -43,7 +43,7 @@ const { projects } = defineProps<{ projects: Record<string, any[]> }>()
 <style lang="postcss" scoped>
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(minmax(250px, 1fr));
 
   a.item {
     padding: 0.8em 1em;
